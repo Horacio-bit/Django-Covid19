@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% block body_block %}
+
+
+
+<div class="jumbotron">
+  <h1>Lista de pacientes pendientes para para prueba COVID-19</h1>
+  {% for instance in object_list %}
+    <p>{{instance.email}}</p>
+
+  {% endfor %}
+
+</div>
+
+{% endblock %}

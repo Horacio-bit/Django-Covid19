@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% block body_block %}
+{% load static %}
+
+
+<div class="contenido_quimico">
+      <ul class="lista-contenido" class= "list-group list-group-flush">
+        <li class="list-group-item list-group-item-info"><a href="{% url 'gestion_usuarios:lista_usarios' %}">Lista Pacientes</a></li>
+        <li class="list-group-item list-group-item-info"><a href="#">Resultados de Laboratorio</a></li>
+        <li class="list-group-item list-group-item-info"><a href="#">Registro de resultados</a></li>
+        <li class="list-group-item list-group-item-info"><a href="#">Enviar reportes</a></li>
+      </ul>
+</div>
+
+<div class="Bienvenida">
+  <div class="jumbotron">
+    <h1>¡Bienvenido!</h1>
+    <p>En esta página web, el personal universitario que tenga que presentarse a la Universidad De Sonora podrá tener acceso a sus resultados de la prueba de COVID-19 que realizaron.</p>
+
+  </div>
+
+</div>
+
+<div class="logo-unison">
+    <img src="{% static 'home/unison.png' %}" alt="logo unison"/>
+</div>
+
+  <style>
+    img{
+      opacity: 0.5;
+      position: absolute;
+      top: 0px;
+      right: 50px;
+      margin-top: 7%;
+      width: 10%;
+    }
+  </style>
+{% endblock %}
